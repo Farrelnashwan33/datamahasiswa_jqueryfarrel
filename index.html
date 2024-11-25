@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Mahasiswa</h1>
+        
+        <!-- Form input data mahasiswa -->
+        <div class="form-group">
+            <input type="text" id="nama" placeholder="Nama Mahasiswa" />
+            <input type="number" id="umur" placeholder="Umur" />
+            <input type="text" id="jurusan" placeholder="Jurusan" />
+            <button id="tambah" class="btn">Tambah</button>
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Cari Mahasiswa..." />
+        </div>
+
+        <!-- Tabel data mahasiswa -->
+        <table id="data-mahasiswa">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Umur</th>
+                    <th>Jurusan</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="mahasiswa-list"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

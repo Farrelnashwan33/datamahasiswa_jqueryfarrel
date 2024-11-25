@@ -1,0 +1,137 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff4e1; /* Batik-like background color */
+    background-image: url(''); /* Background batik pattern */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* Container utama */
+.container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Styling judul */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #9c5f2f; /* Batik brown color */
+}
+
+/* Form input data */
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.form-group input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #9c5f2f;
+    border-radius: 4px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #de8d45; /* Lighter brown color on focus */
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #8b4513; /* Dark batik brown */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #de8d45; /* Lighter brown color */
+}
+
+/* Search bar */
+.search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#search {
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #9c5f2f;
+    border-radius: 4px;
+    outline: none;
+}
+
+#search:focus {
+    border-color: #de8d45; /* Lighter brown color */
+}
+
+/* Tabel untuk data mahasiswa */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #8b4513; /* Dark batik brown */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+td button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #ffbf00; /* Yellow batik */
+}
+
+.delete-btn {
+    background-color: #dc3545; /* Red color */
+}
+
+.edit-btn:hover {
+    background-color: #e0a800; /* Dark yellow on hover */
+}
+
+.delete-btn:hover {
+    background-color: #c82333; /* Dark red on hover */
+}
+
+/* Media query untuk responsif */
+@media screen and (max-width: 768px) {
+    .form-group {
+        flex-direction: column;
+    }
+
+    #search {
+        width: 100%;
+    }
+}
